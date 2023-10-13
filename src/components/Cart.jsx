@@ -86,7 +86,9 @@ export default function Cart() {
         ""
       )}
       {cards.length ? (
-        cards
+        <div className="row">
+          {cards}
+        </div>
       ) : (
         <div
           style={{ height: "500px" }}
