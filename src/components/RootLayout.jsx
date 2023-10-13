@@ -12,7 +12,7 @@ export default function RootLayout() {
         <NavBar className="mb-2" />
 
 
-        <main className="main-wrapper">
+        <main className="main-wrapper container">
           <Outlet />
         </main>
 

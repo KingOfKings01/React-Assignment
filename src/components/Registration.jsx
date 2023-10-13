@@ -53,7 +53,7 @@ export default function Registration() {
           <Form.Group className="mb-3 " controlId="emailORphone">
             <Form.Label>Email Or Phone number</Form.Label>
             <Form.Control
-              type="tel"
+              type="text"
               autoComplete="off"
               placeholder="Enter email or number"
               name="emailORphone"

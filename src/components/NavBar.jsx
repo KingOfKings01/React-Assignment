@@ -21,7 +21,7 @@ export default function NavBar() {
         <Navbar.Brand href="">Redux Toolkit</Navbar.Brand>
         <Nav>
           <Nav.Link to="/" as={Link}>
-            <b style={{ position: "relative", left: "-50%" }}>Products</b>
+            <b className="products-link">Products</b>
           </Nav.Link>
         </Nav>
         {/* <Navbar.Collapse className="justify-content-end"> */}

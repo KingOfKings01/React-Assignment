@@ -45,3 +45,16 @@
   min-height: 65vh;  
 }
 
+
+
+.products-link{
+  position: "relative";
+  left: "-50%"
+}
+
+@media (max-width: 365px) {
+  .products-link{
+    left: "-10%"
+  }
+
+}
