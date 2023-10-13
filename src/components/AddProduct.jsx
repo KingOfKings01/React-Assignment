@@ -56,9 +56,9 @@ const uploadImage = async (imageUpload) => {
             const imgUrl = await uploadImage(imageUpload)
             const Data = {...values, imageUrl: imgUrl, attributes}
             
-            await axios.post("http://localhost:3000/addProduct", Data )
+            await axios.post("https://api-assignment-jpjg.onrender.com/addProduct", Data )
             navigate("/")
-            
+
           } catch(err){
             console.log(err)
           }

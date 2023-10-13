@@ -16,7 +16,7 @@ export default function Orders() {
 
   async function getOrders() {
     try {
-      const response = await axios.get("http://localhost:3000/ordersByUserId/"+userId)
+      const response = await axios.get("https://api-assignment-jpjg.onrender.com/ordersByUserId/"+userId)
       setOrders([...response.data].slice().reverse()); //* Set orders in reverse order
       setLoading(false); // Set loading to false once the data is fetched
     } catch (error) {

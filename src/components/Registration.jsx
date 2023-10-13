@@ -32,7 +32,7 @@ export default function Registration() {
       onSubmit: async (values) => {
 
         try{
-          const res = await axios.post("http://localhost:3000/register", {
+          const res = await axios.post("https://api-assignment-jpjg.onrender.com/register", {
           emailOrPhone: values.emailORphone,
           password: values.password
           })

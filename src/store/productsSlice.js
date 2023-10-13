@@ -33,6 +33,7 @@ export default productsSlice.reducer
 
 export const getProducts = createAsyncThunk('products/get', async () => {
     // const result = await axios.get("https://api.escuelajs.co/api/v1/products") //? https://fakestoreapi.com/products
-    const result = await axios.get("http://localhost:3000/products") 
+    // const result = await axios.get("http://localhost:3000/products") 
+    const result = await axios.get("https://api-assignment-jpjg.onrender.com/products") 
     return result.data
 })  

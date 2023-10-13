@@ -31,7 +31,7 @@ export default function Login() {
       // console.log("valses", values)
       // sessionStorage.setItem("data", values.emailORphone);
       try{
-        const res = await axios.post("http://localhost:3000/login", {
+        const res = await axios.post("https://api-assignment-jpjg.onrender.com/login", {
         username: values.emailORphone,
         password: values.password
         })

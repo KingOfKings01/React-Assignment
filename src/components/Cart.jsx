@@ -21,7 +21,7 @@ export default function Cart() {
     console.log("res")
     try{
       const Data = {userId, products}
-      const res = await axios.post("http://localhost:3000/order", Data )
+      const res = await axios.post("https://api-assignment-jpjg.onrender.com/order", Data )
       if(isAuthenticated){
         dispatch(clear())
         navigate("/thankyou")
