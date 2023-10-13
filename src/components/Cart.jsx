@@ -37,7 +37,7 @@ export default function Cart() {
   };
 
   const cards = products.map((product, idx) => (
-    <div key={idx} className="my-2 d-flex justify-content-center">
+    <div key={idx} className="col-md-3 my-2 d-flex justify-content-center">
       <Card
         style={{ width: "18rem" }}
         className="d-flex justify-content-center"
