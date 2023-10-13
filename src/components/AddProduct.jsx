@@ -7,6 +7,7 @@ import { useState } from "react";
 import { storage } from "../firebase.js";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { v4 } from "uuid";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -19,7 +20,7 @@ const AddProduct = () => {
     },
   ]);
   const [imageUpload, setImageUpload] = useState();
-
+  const navigate = useNavigate();
   const initialValues = {
     title: "",
     price: "",
@@ -51,12 +52,13 @@ const uploadImage = async (imageUpload) => {
  
           try{
             if(! imageUpload) {console.log("No image")}
-            console.log("My image",imageUpload)
+
             const imgUrl = await uploadImage(imageUpload)
             const Data = {...values, imageUrl: imgUrl, attributes}
             
-            const res = await axios.post("http://localhost:3000/addProduct", Data )
-            console.log("AddProduct.jsx line:58 -> ",res.data)
+            await axios.post("http://localhost:3000/addProduct", Data )
+            navigate("/")
+            
           } catch(err){
             console.log(err)
           }
