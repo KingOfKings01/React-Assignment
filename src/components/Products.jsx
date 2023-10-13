@@ -36,7 +36,7 @@ export default function Products() {
 
   if (status == "error") {
     return (
-      <div className="text-danger">
+      <div className="text-danger d-flex flex-column align-items-center">
         <h1>Sorry for inconvenience</h1>
         <h2>We are currently fixing this issue</h2>
         <h2>Please try after some time</h2>
